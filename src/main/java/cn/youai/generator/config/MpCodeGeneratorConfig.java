@@ -1,4 +1,4 @@
-package com.weiller.generator.config;
+package cn.youai.generator.config;
 
 import com.baomidou.mybatisplus.generator.config.DataSourceConfig;
 import com.baomidou.mybatisplus.generator.config.GlobalConfig;

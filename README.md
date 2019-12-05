@@ -15,7 +15,7 @@
 			</plugin>
 			<!-- mybatis-plus generator 自动生成代码插件 -->
 			<plugin>
-				<groupId>com.weiller</groupId>
+				<groupId>cn.youai</groupId>
 				<artifactId>mybatis-plus-generator-maven-plugin</artifactId>
 				<version>1.0.0</version>
 				<configuration>
@@ -31,7 +31,7 @@
 配置完整案例
 ```yaml
 globalConfig:
-  author: weiller
+  author: youai
   open: false
   idType: INPUT
   dateType: ONLY_DATE
@@ -47,7 +47,7 @@ dataSourceConfig:
   username: root
   password: xiweile
 packageConfig:
-  parent: com.weiller
+  parent: cn.youai
   moduleName: rest
   entity: model
   service: service
@@ -56,12 +56,12 @@ packageConfig:
   xml: mapper
   controller: controller
   pathInfo:
-    entity_path: src\main\java\com\weiller\rest\model
-    service_path: src\main\java\com\weiller\rest\service
-    service_impl_path: src\main\java\com\weiller\rest\service\impl
-    mapper_path: src\main\java\com\weiller\rest\dao
-    xml_path: src\main\resources\com\weiller\rest\mapper
-    controller_path: src\main\java\com\weiller\rest\controller
+    entity_path: src\main\java\cn\youai\rest\model
+    service_path: src\main\java\cn\youai\rest\service
+    service_impl_path: src\main\java\cn\youai\rest\service\impl
+    mapper_path: src\main\java\cn\youai\rest\dao
+    xml_path: src\main\resources\cn\youai\rest\mapper
+    controller_path: src\main\java\cn\youai\rest\controller
 strategyConfig:
   naming: underline_to_camel
   columnNaming: underline_to_camel

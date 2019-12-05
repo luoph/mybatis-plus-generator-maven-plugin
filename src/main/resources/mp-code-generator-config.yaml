@@ -1,5 +1,5 @@
 globalConfig:
-  author: weiller
+  author: youai
   open: false
   idType: INPUT
   dateType: ONLY_DATE
@@ -15,7 +15,7 @@ dataSourceConfig:
   username: root
   password: xiweile
 packageConfig:
-  parent: com.weiller.product
+  parent: cn.youai.product
   moduleName: rest
   entity: model
   service: service
@@ -24,12 +24,12 @@ packageConfig:
   xml: mapper
   controller: controller
   pathInfo:
-    entity_path: .\springcloud-product\src\main\java\com\weiller\product\rest\model
-    service_path: .\springcloud-product\src\main\java\com\weiller\product\rest\service
-    service_impl_path: .\springcloud-product\src\main\java\com\weiller\product\rest\service\impl
-    mapper_path: .\springcloud-product\src\main\java\com\weiller\product\rest\dao
-    xml_path: .\springcloud-product\src\main\resources\com\weiller\product\rest\mapper
-    controller_path: .\springcloud-product\src\main\java\com\weiller\product\rest\controller
+    entity_path: .\springcloud-product\src\main\java\cn\youai\product\rest\model
+    service_path: .\springcloud-product\src\main\java\cn\youai\product\rest\service
+    service_impl_path: .\springcloud-product\src\main\java\cn\youai\product\rest\service\impl
+    mapper_path: .\springcloud-product\src\main\java\cn\youai\product\rest\dao
+    xml_path: .\springcloud-product\src\main\resources\cn\youai\product\rest\mapper
+    controller_path: .\springcloud-product\src\main\java\cn\youai\product\rest\controller
 strategyConfig:
   naming: underline_to_camel
   columnNaming: underline_to_camel
