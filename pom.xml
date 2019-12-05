@@ -11,6 +11,13 @@
     <description>Mybatis-Plus code generator</description>
 
     <properties>
+        <maven.resources.overwrite>true</maven.resources.overwrite>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <maven.compiler.compilerVersion>1.8</maven.compiler.compilerVersion>
+        <failOnMissingWebXml>false</failOnMissingWebXml>
+        <argLine>-Dfile.encoding=UTF-8</argLine>
         <java.version>1.8</java.version>
         <slf4j.version>1.7.25</slf4j.version>
         <logback.version>1.2.3</logback.version>
@@ -124,6 +131,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
                 <configuration>
                     <source>6</source>
                     <target>6</target>
