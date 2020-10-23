@@ -5,7 +5,7 @@
 
     <groupId>cn.youai</groupId>
     <artifactId>mybatis-plus-generator-maven-plugin</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>maven-plugin</packaging>
     <name>mybatis-plus-generator-maven-plugin</name>
     <description>Mybatis-Plus code generator</description>
@@ -25,8 +25,8 @@
         <freemarker.version>2.3.28</freemarker.version>
         <mysql-connector.version>5.1.46</mysql-connector.version>
         <snakeyaml.version>1.19</snakeyaml.version>
-        <mybatis-plus.version>3.1.2</mybatis-plus.version>
-        <maven-plugin-api.version>3.5.0</maven-plugin-api.version>
+        <mybatis-plus.version>3.3.1</mybatis-plus.version>
+        <maven-plugin-api.version>3.5.4</maven-plugin-api.version>
         <maven-plugin.version>3.5</maven-plugin.version>
     </properties>
 
