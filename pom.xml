@@ -5,7 +5,7 @@
 
     <groupId>cn.youai</groupId>
     <artifactId>mybatis-plus-generator-maven-plugin</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
     <packaging>maven-plugin</packaging>
     <name>mybatis-plus-generator-maven-plugin</name>
     <description>Mybatis-Plus code generator</description>
