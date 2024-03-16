@@ -12,7 +12,6 @@ import io.swagger.annotations.ApiModelProperty;
 </#if>
 <#if entityLombokModel>
 import lombok.Data;
-import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
 </#if>
 
@@ -28,8 +27,6 @@ import lombok.experimental.Accessors;
 @Data
     <#if superEntityClass??>
 @EqualsAndHashCode(callSuper = true)
-    <#else>
-@EqualsAndHashCode(callSuper = false)
     </#if>
 @Accessors(chain = true)
 </#if>
@@ -65,10 +62,10 @@ public class ${entity} implements Serializable {
     </#if>
     <#if field.keyFlag>
     <#-- 主键 -->
-        <#if field.keyIdentityFlag>
-    @TableId(value = "${field.name}", type = IdType.AUTO)
-        <#elseif idType??>
+        <#if idType??>
     @TableId(value = "${field.name}", type = IdType.${idType})
+        <#elseif field.keyIdentityFlag>
+    @TableId(value = "${field.name}", type = IdType.AUTO)
         <#elseif field.convert>
     @TableId("${field.name}")
         </#if>
